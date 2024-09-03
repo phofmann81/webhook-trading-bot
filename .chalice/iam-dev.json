@@ -1,0 +1,22 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"secretsmanager:GetSecretValue",
+				"secretsmanager:DescribeSecret"
+			],
+			"Resource": "arn:aws:secretsmanager:eu-central-1:156041414956:secret:api/webhook-trading-bot/alpaca-TMXxyy"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"logs:CreateLogGroup",
+				"logs:CreateLogStream",
+				"logs:PutLogEvents"
+			],
+			"Resource": "arn:*:logs:*:*:*"
+		}
+	]
+}
